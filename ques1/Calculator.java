@@ -1,5 +1,3 @@
-package com.example.calculator;
-
 public class Calculator {
     private int result;
 
@@ -13,5 +11,14 @@ public class Calculator {
 
     public void display() {
         System.out.println("The result is: " + result);
+    }
+
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+
+        // Example operations
+        System.out.println("Performing addition: 5 + 3");
+        calc.add(5, 3);
+        calc.display();
     }
 }
